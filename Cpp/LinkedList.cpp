@@ -152,6 +152,7 @@ void LinkedList::deleteIndex(int index){  //Same with the deleteData function bu
         prev->next = temp->next;
         delete temp;                            //When found make the same trick. Don't lose link and delete the unlinked node
     }
+    len--;
 }
 
 void LinkedList::traverse(){
